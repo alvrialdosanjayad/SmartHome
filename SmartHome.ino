@@ -8,8 +8,8 @@
 #define RST_PIN         22          // Configurable, see typical pin layout above
 #define SS_PIN          21         // Configurable, see typical pin layout above
 
-const char ssid[] = "AND4NG";
-const char pass[] = "Bujangga2021";
+const char ssid[] = "71170230";
+const char pass[] = "12345678";
 static const int servoPin = 12;
 
 
@@ -38,7 +38,7 @@ void connect() {
   }
 
   Serial.print("\nconnecting...");
-  while (!client.connect("ESP32", "alvrialdo12", "1qa2w3ed4r")) {
+  while (!client.connect("ESP32", "key(Username)", "key(Password)")) {
     Serial.print(".");
     delay(1000);
   }
